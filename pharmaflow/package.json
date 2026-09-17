@@ -1,0 +1,32 @@
+{
+  "name": "pharmaflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PharmaFlow pharmacy inventory management foundation",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node --watch server/server.js",
+    "dev:client": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build client --outDir dist",
+    "start": "node server/server.js",
+    "db:init": "node server/db/init.js",
+    "test": "node --test test/*.test.js",
+    "test:t2": "node --test test/t2-clock.test.js",
+    "test:t4": "node --test test/t4-import.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.0.1",
+    "vite": "^5.4.10"
+  }
+}

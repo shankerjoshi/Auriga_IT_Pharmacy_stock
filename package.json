@@ -1,0 +1,24 @@
+{
+  "name": "pharmacy-fefo-dashboard",
+  "version": "1.0.0",
+  "description": "Full-stack pharmacy stock management app using FEFO dispensing logic and SQLite persistence.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "pharmacy",
+    "inventory",
+    "fefo",
+    "sqlite",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workspace Ready</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1d4ed8);
+        color: #e2e8f0;
+      }
+
+      .card {
+        max-width: 620px;
+        padding: 2rem 2.5rem;
+        border-radius: 18px;
+        background: rgba(15, 23, 42, 0.72);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        box-shadow: 0 20px 60px rgba(15, 23, 42, 0.35);
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      code {
+        background: rgba(148, 163, 184, 0.18);
+        padding: 0.2rem 0.45rem;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Workspace initialized</h1>
+      <p>
+        This folder is ready for development. Use <code>npm start</code> to run the local server.
+      </p>
+      <p>
+        Edit the files in this project and build from here.
+      </p>
+    </main>
+  </body>
+</html>
